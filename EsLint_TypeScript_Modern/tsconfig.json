@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "react",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": [
+      "vite/client",
+      // "jest",
+      "@vitest/globals",
+      "@vitest/browser/matchers"
+    ],
+    "baseUrl": ".",
+    "typeRoots": [
+      "node_modules/@types",
+      "src/types" // Adjust this path to where your custom type declarations are
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  // "include": ["src/**/*.ts", "src/**/*.tsx", "vite.config.ts"],
+  // "exclude": ["node_modules", "dist"],
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
