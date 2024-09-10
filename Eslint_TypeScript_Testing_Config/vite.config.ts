@@ -5,13 +5,7 @@ const typedEslintPlugin = eslint as () => import('vite').Plugin;
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    eslint({
-      include: ['src/**/*.ts', 'src/**/*.tsx', 'src/**/*.js', 'src/**/*.jsx'],
-      cache: false, // optional, disables ESLint caching to avoid old results
-    }),
-  ],
+  plugins: [react(), typedEslintPlugin()],
   test: {
     globals: true,
     environment: 'jsdom',
