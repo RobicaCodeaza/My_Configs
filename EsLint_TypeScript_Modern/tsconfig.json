@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "module": "esnext",
     "jsx": "react",
-    "moduleResolution": "node",
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,

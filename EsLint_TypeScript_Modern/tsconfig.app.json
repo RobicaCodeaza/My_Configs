@@ -1,4 +1,5 @@
 {
+  "extends": "./tsconfig.json",
   "compilerOptions": {
     "target": "ES2020",
     "useDefineForClassFields": true,
@@ -20,5 +21,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"]
+  "include": ["src/**/*.ts", "src/**/*.tsx"], // Make sure the paths include all relevant files
+  "exclude": ["node_modules", "dist"]
 }
