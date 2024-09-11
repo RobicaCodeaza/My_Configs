@@ -40,9 +40,9 @@ export default tseslint.config(
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
       react,
-      'plugin:testing-library/react': testingLibrary,
-      'plugin:vitest': vitest,
-      'plugin:jest-dom/recommended': jestDom,
+      // 'plugin:testing-library/react': testingLibrary,
+      // 'plugin:vitest': vitest,
+      // 'plugin:jest-dom/recommended': jestDom,
     },
     rules: {
       //-----------------------------------------
