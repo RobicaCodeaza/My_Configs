@@ -70,6 +70,11 @@ export default tseslint.config(
       //-----------------------------------------
 
       //-----------------------------------------
+      //Vitest Rules
+      'vitest/expect-expect': 'off',
+      //-----------------------------------------
+
+      //-----------------------------------------
       //testingLibraryReact Rules
 
       'testing-library/await-async-events': [
