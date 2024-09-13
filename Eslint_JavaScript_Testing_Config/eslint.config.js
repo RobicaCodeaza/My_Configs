@@ -12,9 +12,8 @@ export default [
   react.configs.flat['jsx-runtime'],
   js.configs.recommended,
   vitest.configs.recommended,
-  // ...testingLibrary.configs['flat/dom'],
-  // testingLibrary.configs.recommended,
-  // jestDom.configs['flat/recommended'],
+  jestDom.configs['flat/recommended'],
+  // testingLibrary.configs['flat/react'],
   { ignores: ['dist'] },
   {
     files: ['**/*.{js,jsx}'],
@@ -29,10 +28,10 @@ export default [
     },
     settings: { react: { version: 'detect' } },
     plugins: {
+      'plugin:testing-library/react': testingLibrary,
       react,
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
-      'plugin:testing-library/react': testingLibrary,
     },
     rules: {
       'no-unused-vars': 'off',

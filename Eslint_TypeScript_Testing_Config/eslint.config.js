@@ -8,8 +8,6 @@ import vitest from 'eslint-plugin-vitest';
 import jestDom from 'eslint-plugin-jest-dom';
 import testingLibrary from 'eslint-plugin-testing-library';
 
-console.log(testingLibrary.configs['flat/react']);
-
 export default tseslint.config(
   { ignores: ['dist', 'build'] },
 
@@ -20,6 +18,7 @@ export default tseslint.config(
       ...tseslint.configs.stylisticTypeChecked,
       vitest.configs.recommended,
       jestDom.configs['flat/recommended'],
+      // testingLibrary.configs['flat/react'],
     ],
     files: ['**/*.{ts,tsx}'],
     languageOptions: {
