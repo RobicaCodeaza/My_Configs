@@ -12,8 +12,9 @@ export default [
   react.configs.flat['jsx-runtime'],
   js.configs.recommended,
   vitest.configs.recommended,
-  testingLibrary.configs.recommended,
-  jestDom.configs['flat/recommended'],
+  // ...testingLibrary.configs['flat/dom'],
+  // testingLibrary.configs.recommended,
+  // jestDom.configs['flat/recommended'],
   { ignores: ['dist'] },
   {
     files: ['**/*.{js,jsx}'],

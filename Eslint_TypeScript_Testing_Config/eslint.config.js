@@ -8,6 +8,8 @@ import vitest from 'eslint-plugin-vitest';
 import jestDom from 'eslint-plugin-jest-dom';
 import testingLibrary from 'eslint-plugin-testing-library';
 
+console.log(testingLibrary.configs['flat/react']);
+
 export default tseslint.config(
   { ignores: ['dist', 'build'] },
 
@@ -18,7 +20,6 @@ export default tseslint.config(
       ...tseslint.configs.stylisticTypeChecked,
       vitest.configs.recommended,
       jestDom.configs['flat/recommended'],
-      testingLibrary['flat/recommended'],
     ],
     files: ['**/*.{ts,tsx}'],
     languageOptions: {
@@ -37,6 +38,7 @@ export default tseslint.config(
     }, // What version of react we use to be available to the eslint-plugin-react
 
     plugins: {
+      'plugin:testing-library/react': testingLibrary,
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
       react,
